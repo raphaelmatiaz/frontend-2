@@ -1,0 +1,29 @@
+
+.card {
+    width: 300px;
+    border: 1px solid #FFF;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.cardImage {
+    max-width: 100%;
+}
+
+.cardTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.cardText {
+    font-weight: light;
+    color: white;
+}
+
+.cardCtaButton {
+    border: 1px double white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+    min-width: 100%;
+}
