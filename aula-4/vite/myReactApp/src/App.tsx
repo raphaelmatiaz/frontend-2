@@ -1,6 +1,7 @@
 import './App.css'
 import Card from './components/Card/Card.tsx'
-
+import Greeting from './components/Greeting.tsx'
+import AccountBalance from './components/AccountBalance.tsx'
 
 const cardA = {
   title: "Very Fancy Card",
@@ -29,6 +30,8 @@ function App() {
 
   return (
     <>
+      <AccountBalance balance={1000}></AccountBalance>
+      <Greeting name="Rafael"></Greeting>
       <Card title={cardA.title} imgUrl={cardA.imgUrl} text={cardA.text} ctaText={cardA.ctaText}></Card>
       <Card title={cardB.title} imgUrl={cardB.imgUrl} text={cardB.text} ctaText={cardB.ctaText}></Card>
       <Card title={cardC.title} imgUrl={cardC.imgUrl} text={cardC.text} ctaText={cardC.ctaText}></Card>

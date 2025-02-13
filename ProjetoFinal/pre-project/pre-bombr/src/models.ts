@@ -3,21 +3,21 @@ export interface User {
     id: number;
     name: string;
     surname: string;
+    username: string;
     email: string;
     password: string;
-    role: string;
 }
 
 export interface UserProfile {
     user: User;
     id: number;
-    nickname: string;
-    profilePicture: string;
+    profilePicture?: string;
     postAmount: number;
     followerAmount: number;
     followingAmount: number;
-    description: string;
+    description?: string;
     profilePosts: Post[];
+    profileInvasivePosts: Post[];
 }
 
 export interface Post {
@@ -32,7 +32,7 @@ export interface Post {
     comments: Comment[];
 }
 
-export interface homeFeed {
+export interface HomeFeed {
     listOfPosts: Post[];
 }
 
