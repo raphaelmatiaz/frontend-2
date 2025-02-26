@@ -8,16 +8,19 @@ import { Routes, Route } from 'react-router-dom'
 import Nav from './components/Nav/Nav.tsx'
 import React from 'react'
 
-export const Context = React.createContext();
+import { Provider } from 'react-redux';
+import { store } from './redux/store.ts'
+
+// export const Context = React.createContext();
 
 function App() {
 
-  const [signedIn, setSignedIn] = useState(false)
+  // const [signedIn, setSignedIn] = useState(false)
 
   return (
-    <Context.Provider value={[signedIn, setSignedIn]}>
+    <Provider store={store}>
       <Nav></Nav>
-    </Context.Provider>
+    </Provider>
   )
 }
 
