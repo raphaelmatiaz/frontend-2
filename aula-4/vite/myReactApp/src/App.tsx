@@ -7,6 +7,7 @@ import AboutPage from './pages/About.tsx'
 import { Routes, Route } from 'react-router-dom'
 import Nav from './components/Nav/Nav.tsx'
 import React from 'react'
+import MotionDiv from "./components/MotionDiv/MotionDiv.tsx"
 
 import { Provider } from 'react-redux';
 import { store } from './redux/store.ts'
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <Provider store={store}>
+      <MotionDiv></MotionDiv>
       <Nav></Nav>
     </Provider>
   )
