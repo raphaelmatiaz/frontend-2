@@ -1,0 +1,20 @@
+.fieldset {
+    margin: 32px 0;
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+    margin: 8px 0;
+    height: 16px;
+}
+
+.postsContainer {
+    width: 100%;
+    border: 1px solid white;
+    padding: 8px;
+}

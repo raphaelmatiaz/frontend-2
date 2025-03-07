@@ -11,6 +11,7 @@ import MotionDiv from "./components/MotionDiv/MotionDiv.tsx"
 
 import { Provider } from 'react-redux';
 import { store } from './redux/store.ts'
+import Form from './components/Form/Form.tsx'
 
 // export const Context = React.createContext();
 
@@ -20,8 +21,9 @@ function App() {
 
   return (
     <Provider store={store}>
-      <MotionDiv></MotionDiv>
+      {/* <MotionDiv></MotionDiv> */}
       <Nav></Nav>
+      <Form></Form>
     </Provider>
   )
 }
